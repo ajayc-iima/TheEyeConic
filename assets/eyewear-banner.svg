@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 384">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    
+    <!-- Text shadow filter -->
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3" flood-color="#000"/>
+    </filter>
+    
+    <!-- Glass effect -->
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.5)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.2)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)" rx="8" ry="8" />
+  
+  <!-- Decorative elements - stylized glasses -->
+  <g opacity="0.1" fill="white">
+    <!-- Left lens -->
+    <ellipse cx="300" cy="260" rx="120" ry="70" transform="rotate(-10)" />
+    <!-- Right lens -->
+    <ellipse cx="550" cy="240" rx="120" ry="70" transform="rotate(10)" />
+    <!-- Bridge -->
+    <rect x="420" y="230" width="60" height="10" rx="5" ry="5" transform="rotate(-5)" />
+    <!-- Temple arms -->
+    <rect x="180" y="240" width="80" height="8" rx="4" ry="4" transform="rotate(-25)" />
+    <rect x="670" y="195" width="80" height="8" rx="4" ry="4" transform="rotate(25)" />
+  </g>
+  
+  <!-- Overlay for text visibility -->
+  <rect width="100%" height="100%" fill="rgba(0,0,0,0.4)" rx="8" ry="8" />
+  
+  <!-- Main heading -->
+  <text x="512" y="192" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">
+    Discover the Latest
+  </text>
+  <text x="512" y="260" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">
+    Eyewear Trends
+  </text>
+  
+  <!-- Stylized sunglasses icon -->
+  <g transform="translate(512, 100) scale(1.2)">
+    <!-- Left lens -->
+    <ellipse cx="-50" cy="0" rx="40" ry="25" fill="none" stroke="white" stroke-width="3" />
+    <!-- Right lens -->
+    <ellipse cx="50" cy="0" rx="40" ry="25" fill="none" stroke="white" stroke-width="3" />
+    <!-- Bridge -->
+    <path d="M-10,0 L10,0" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <!-- Temple arms -->
+    <path d="M-90,-2 L-130,-15" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M90,-2 L130,-15" stroke="white" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Reflection highlight -->
+    <path d="M-70,-10 L-40,5" stroke="rgba(255,255,255,0.7)" stroke-width="2" />
+    <path d="M30,-10 L60,5" stroke="rgba(255,255,255,0.7)" stroke-width="2" />
+  </g>
+  
+  <!-- Fashion-forward design elements -->
+  <circle cx="100" cy="100" r="40" fill="url(#glassGradient)" opacity="0.5" />
+  <circle cx="924" cy="284" r="60" fill="url(#glassGradient)" opacity="0.5" />
+</svg>
